@@ -11,6 +11,7 @@
     }
     
   }
+  
   $class = new users();
   if(isset($_GET['add_prediksi'])){
     $class->add_prediksi();
@@ -27,6 +28,7 @@
   else{
     $data=$class->get_catatan_data();
     echo count($data);
+    
     //echo $_SERVER['REQUEST_URI'];
     $class->index($data);
   }

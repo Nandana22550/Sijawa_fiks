@@ -2,7 +2,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <div class="row" style="padding-top:10px">
-      <div class="col-12"><h4 align="center" style="color:lightgrey;padding-top:5px">SiJawa</h4></div>
+    <div class="col-12">
+    <img align="center" src="assets/img/artikel/Logo1.png" alt="Logo" style="width: 200px;"></div>
       <hr>
     </div>
     <div align="center">

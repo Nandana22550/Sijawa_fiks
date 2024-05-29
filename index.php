@@ -22,6 +22,9 @@
     else if(isset($_GET['prediksi'])){
       require('conttroler/user/prediksi.php');
     }
+    else if(isset($_GET['prediksihasil'])){
+      require('conttroler/user/prediksi_hasil.php');
+    }
     else if(isset($_GET['register'])){
       require('conttroler/auth/register.php');
     }
@@ -31,6 +34,7 @@
     else if(isset($_GET['login'])){
 		require('conttroler/auth/login.php');
     }
+
   else{
     require('view/user/index.php');
   }

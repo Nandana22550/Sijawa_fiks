@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SIJAWA - Index</title>
+  <title>SIJAWA | Landing Page</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -77,35 +77,15 @@
       <nav id="navbar" class="navbar" style="background-color:#30353b;color:white">
         <ul>
 
-        <li class="dropdown" style="background-color:#30353b;color:white"><a href="#" style="background-color:#30353b;color:white"><span >Layanan</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-
-          </ul>
+        <li class="dropdown" style="background-color:#30353b;color:white"><a href="index.php?dashboard" style="background-color:#30353b;color:white"><span >Dashboard</span></i></a>
         </li>
 
-        <li class="dropdown"><a href="#" style="background-color:#30353b;color:white"><span>Kategori</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-
-          </ul>
-        </li>
-
-        <li class="dropdown"><a href="#" style="background-color:#30353b;color:white"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-
-          </ul>
-        </li>
           
           <?php if(isset($_SESSION['username'])){?>
           <li><a href="index.php?logout" class="getstarted">Logout</a></li>
           <?php }else{ ?>
             <li><a href="index.php?login" class="getstarted">Login</a></li>
-            <li><a href="index.php?login" class="getstarted" style="background-color:darkgray">Daftar</a></li>
+            <li><a href="index.php?register" class="getstarted" style="background-color:darkgray">Daftar</a></li>
           <?php }?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
