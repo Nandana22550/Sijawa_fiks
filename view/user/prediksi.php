@@ -78,12 +78,6 @@ $con = new mysqli("localhost", "root", "", "db_sijawa");
         </div>
 
       </div>
-
-      <div class="card bg-info text-white" style="width:400px">
-        <div class="card-body">
-          <h5>Hasil </h5>
-          <?= $hasil ?>
-        </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
