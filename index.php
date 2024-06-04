@@ -19,6 +19,9 @@
     else if(isset($_GET['edukasi'])||isset($_GET['add_edukasi'])||isset($_GET['edit_edukasi'])||isset($_GET['delete_edukasi'])){
       require('conttroler/user/edukasi.php');
     }
+    else if(isset($_GET['edukasiuser'])){
+      require('conttroler/user/edukasiuser.php');
+    }
     else if(isset($_GET['prediksi'])){
       require('conttroler/user/prediksi.php');
     }

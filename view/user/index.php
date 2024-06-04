@@ -302,7 +302,7 @@ require("view/template/header_user.php");
                       SiJawa adalah sebuah layanan yang dirancang untuk membantu para petani, pedagang, dan konsumen dalam memperoleh perkiraan harga cabai di pasar. Dengan menggunakan data historis, tren pasar, dan algoritma analisis. fitur ini memberikan prediksi harga cabai untuk periode waktu tertentu di masa yang mendatang.
                     </p>
                   </div>
-                  <div class="col-5">
+                  <div class="col-5">   
                     <img src="assets/img/artikel/2.jpg" alt="Los Angeles" height=100% style="border-radius:10px">
                   </div>
                 </div>

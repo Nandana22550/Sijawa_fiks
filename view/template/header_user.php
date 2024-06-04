@@ -17,7 +17,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -31,65 +31,67 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-<style>
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:50px;
-	left:30px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
+  <style>
+    .float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 50px;
+      left: 30px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
 
-.my-float{
-	margin-top:16px;
-}
-
-</style>
+    .my-float {
+      margin-top: 16px;
+    }
+  </style>
 </head>
 
 <body style="background-color:#30353b;color:white">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=6285156912842" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=6285156912842" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center" style="background-color:#30353b;color:white">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto">SIJAWA</h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar" style="background-color:#30353b;color:white">
         <ul>
+          <li class="dropdown" style="background-color:#30353b;color:white"><a href="#" onclick="return checkLogin();" style="background-color:#30353b;color:white"><span>Dashboard</span></a></li>
 
-        <li class="dropdown" style="background-color:#30353b;color:white"><a href="index.php?dashboard" style="background-color:#30353b;color:white"><span >Dashboard</span></i></a>
-        </li>
-
-          
-          <?php if(isset($_SESSION['username'])){?>
-          <li><a href="index.php?logout" class="getstarted">Logout</a></li>
-          <?php }else{ ?>
+          <?php if (isset($_SESSION['username'])) { ?>
+            <li><a href="index.php?logout" class="getstarted">Logout</a></li>
+          <?php } else { ?>
             <li><a href="index.php?login" class="getstarted">Login</a></li>
             <li><a href="index.php?register" class="getstarted" style="background-color:darkgray">Daftar</a></li>
-          <?php }?>
+          <?php } ?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+
+  <script>
+    function checkLogin() {
+      <?php if (!isset($_SESSION['username'])) { ?>
+        alert("You must log in first to access the Dashboard!");
+        return false;
+      <?php } else { ?>
+        window.location.href = 'index.php?dashboard';
+      <?php } ?>
+    }
+  </script>
+
+</body>
+
+</html>

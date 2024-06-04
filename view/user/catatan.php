@@ -240,8 +240,8 @@
           <label class="col-sm-2 col-form-label" style="margin-left: 150px;">Kondisi Cuaca</label>
           <div class="col-sm-6">
             <select type="" name="kondisi_cuaca" class="form-control" placeholder="" required>
-              <option value="Kering">Kering</option>
-              <option value="Basah">Basah</option>
+              <option value="Kemarau">Kemarau</option>
+              <option value="Hujan">Hujan</option>
             </select>
           </div>
         </div>  
